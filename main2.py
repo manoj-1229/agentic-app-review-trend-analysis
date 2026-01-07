@@ -7,7 +7,7 @@ from agents.topic_extraction_agent import extract_topics
 from agents.topic_dedup_agent import load_memory, save_memory, deduplicate_topic
 
 # ---------- CONFIG ----------
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = os.getenv("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")
 DATA_PATH = "data/reviews.csv"
 MEMORY_PATH = "data/topic_memory.json"
 OUTPUT_PATH = "output/trend_report.csv"
@@ -57,4 +57,4 @@ for topic, date_counts in daily_topic_counts.items():
 
 trend_df.to_csv(OUTPUT_PATH)
 
-print("✅ Trend report generated:", OUTPUT_PATH
+print("✅ Trend report generated:", OUTPUT_PATH)
